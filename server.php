@@ -9,6 +9,7 @@ use Workerman\Worker;
 use Workerman\MySQL\Connection;
 
 $worker = new Worker("http://0.0.0.0:2345");
+$worker->count = 4;
 $worker->onWorkerStart = function ($worker){
     global $db;
     $db = new Connection('127.0.0.1', '3306', 'root', 'root', 'workman_test');

@@ -10,6 +10,7 @@ use Workerman\MySQL\Connection;
 
 
 $worker = new Worker("http://0.0.0.0:4444");
+$worker->count = 8;
 $worker->onWorkerStart = function ($worker){
     global $db;
     $db = new Connection('127.0.0.1', '3306', 'root', 'root', 'workman_test');
