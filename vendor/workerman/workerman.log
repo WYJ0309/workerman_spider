@@ -1,0 +1,422 @@
+2019-07-25 02:35:14 pid:1 PDOException: SQL:INSERT INTO `Persons` ( `img_name`,`img_url`) VALUES ('test', http://www.win4000.com/) SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '://www.win4000.com/)' at line 1 in D:\www\phpspider\vendor\workerman\mysql\src\Connection.php:1772
+Stack trace:
+#0 D:\www\phpspider\vendor\workerman\mysql\src\Connection.php(1830): Workerman\MySQL\Connection->execute('INSERT INTO `Pe...', NULL)
+#1 D:\www\phpspider\write.php(82): Workerman\MySQL\Connection->query('INSERT INTO `Pe...')
+#2 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 D:\www\phpspider\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#9 D:\www\phpspider\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\www\phpspider\write.php(105): Workerman\Worker::runAll()
+#11 {main}
+2019-07-25 02:35:14 pid:1 Worker process terminated
+2019-07-25 02:38:53 pid:1 PDOException: SQL:INSERT INTO `Persons` ( `img_name`,`img_url`) VALUES ('test', 'http://www.win4000.com/') SQLSTATE[42S02]: Base table or view not found: 1146 Table 'workman_test.persons' doesn't exist in D:\www\phpspider\vendor\workerman\mysql\src\Connection.php:1772
+Stack trace:
+#0 D:\www\phpspider\vendor\workerman\mysql\src\Connection.php(1830): Workerman\MySQL\Connection->execute('INSERT INTO `Pe...', NULL)
+#1 D:\www\phpspider\write.php(82): Workerman\MySQL\Connection->query('INSERT INTO `Pe...')
+#2 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 D:\www\phpspider\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#9 D:\www\phpspider\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\www\phpspider\write.php(105): Workerman\Worker::runAll()
+#11 {main}
+2019-07-25 02:38:53 pid:1 Worker process terminated
+2019-07-25 03:19:06 pid:1 PDOException: SQL:INSERT INTO `page_url` ( `img_url`) VALUES ( 'http://www.win4000.com/zt/sifang_2.html') SQLSTATE[42S22]: Column not found: 1054 Unknown column 'img_url' in 'field list' in D:\www\phpspider\vendor\workerman\mysql\src\Connection.php:1772
+Stack trace:
+#0 D:\www\phpspider\vendor\workerman\mysql\src\Connection.php(1830): Workerman\MySQL\Connection->execute('INSERT INTO `pa...', NULL)
+#1 D:\www\phpspider\write.php(90): Workerman\MySQL\Connection->query('INSERT INTO `pa...')
+#2 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 D:\www\phpspider\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#9 D:\www\phpspider\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\www\phpspider\write.php(114): Workerman\Worker::runAll()
+#11 {main}
+2019-07-25 03:19:06 pid:1 Worker process terminated
+2019-07-25 03:51:22 pid:1 PDOException: SQL:SELECT id FROM `page_url` WHERE a_href= :a_href SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in D:\www\phpspider\vendor\workerman\mysql\src\Connection.php:1772
+Stack trace:
+#0 D:\www\phpspider\vendor\workerman\mysql\src\Connection.php(1900): Workerman\MySQL\Connection->execute('SELECT id FROM ...', Array)
+#1 D:\www\phpspider\write.php(95): Workerman\MySQL\Connection->row()
+#2 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 D:\www\phpspider\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#9 D:\www\phpspider\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\www\phpspider\write.php(125): Workerman\Worker::runAll()
+#11 {main}
+2019-07-25 03:51:22 pid:1 Worker process terminated
+2019-07-25 03:53:16 pid:1 PDOException: SQL:SELECT id FROM `page_url` WHERE a_href= :a_href SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in D:\www\phpspider\vendor\workerman\mysql\src\Connection.php:1772
+Stack trace:
+#0 D:\www\phpspider\vendor\workerman\mysql\src\Connection.php(1900): Workerman\MySQL\Connection->execute('SELECT id FROM ...', Array)
+#1 D:\www\phpspider\write.php(93): Workerman\MySQL\Connection->row()
+#2 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 D:\www\phpspider\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #24)
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#9 D:\www\phpspider\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#10 D:\www\phpspider\write.php(123): Workerman\Worker::runAll()
+#11 {main}
+2019-07-25 03:53:16 pid:1 Worker process terminated
+2019-07-25 09:03:59 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught TypeError: Argument 1 passed to {closure}() must be an instance of Response, instance of React\HttpClient\Response given, called in D:\www\phpspider\vendor\evenement\evenement\src\Evenement\EventEmitterTrait.php on line 123 and defined in D:\www\phpspider\client.php:25
+Stack trace:
+#0 D:\www\phpspider\vendor\evenement\evenement\src\Evenement\EventEmitterTrait.php(123): {closure}(Object(React\HttpClient\Response), Object(React\HttpClient\Request))
+#1 D:\www\phpspider\vendor\react\http-client\src\Request.php(167): Evenement\EventEmitter->emit('response', Array)
+#2 D:\www\phpspider\vendor\evenement\evenement\src\Evenement\EventEmitterTrait.php(123): React\HttpClient\Request->handleData('HTTP/1.1 200 OK...')
+#3 D:\www\phpspider\vendor\react\stream\src\Util.php(71): Evenement\EventEmitter->emit('data', Array)
+#4 D:\www\phpspider\vendor\evenement\evenement\src\Evenement\EventEmitterTrait.php(123): React\Stream\Util::React\Stream\{closure}('HTTP/1.1 200 OK...')
+#5 D:\www\phpspider\vendor\react\stream\src\Du in D:\www\phpspider\client.php on line 25"
+2019-07-26 06:56:17 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught PDOException: SQL:UPDATE `images` SET `status` = :status WHERE id= SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in D:\www\phpspider\vendor\workerman\mysql\src\Connection.php:1772
+Stack trace:
+#0 D:\www\phpspider\vendor\workerman\mysql\src\Connection.php(1830): Workerman\MySQL\Connection->execute('UPDATE `images`...', Array)
+#1 D:\www\phpspider\down_image.php(28): Workerman\MySQL\Connection->query()
+#2 [internal function]: {closure}()
+#3 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#4 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#5 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#6 D:\www\phpspider in D:\www\phpspider\vendor\workerman\mysql\src\Connection.php on line 1772"
+2019-07-26 06:56:21 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:56:25 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:56:29 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:56:33 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:56:37 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:56:41 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:56:45 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:56:49 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:56:53 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:56:57 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:57:01 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:57:05 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:57:09 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:57:13 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:57:17 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:57:21 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:57:25 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:57:29 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 06:57:33 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 07:19:07 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 07:19:11 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 07:19:15 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 07:19:19 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 07:19:23 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 07:19:27 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 07:19:31 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 07:19:35 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 07:19:39 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 07:19:43 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
+2019-07-26 07:19:47 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function getAttribute() on null in D:\www\phpspider\down_image.php:25
+Stack trace:
+#0 [internal function]: {closure}()
+#1 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(77): call_user_func_array(Object(Closure), Array)
+#2 D:\www\phpspider\vendor\react\event-loop\src\Timer\Timers.php(96): Workerman\Events\React\Base->Workerman\Events\React\{closure}(Object(React\EventLoop\Timer\Timer))
+#3 D:\www\phpspider\vendor\react\event-loop\src\StreamSelectLoop.php(183): React\EventLoop\Timer\Timers->tick()
+#4 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(252): React\EventLoop\StreamSelectLoop->run()
+#5 D:\www\phpspider\vendor\workerman\workerman\Events\React\Base.php(135): Workerman\Events\React\Base->run()
+#6 D:\www\phpspider\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\React\Base->loop()
+#7 D:\www\phpspider\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#8 D:\www\phpspider\vendor\workerman\workerman\Worker.php in D:\www\phpspider\down_image.php on line 25"
