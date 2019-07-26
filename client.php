@@ -17,7 +17,7 @@ $worker->onWorkerStart = function ($worker){
     Timer::add(20,function ()use($db){
         $urlArr = $db->select('*')->from('page_url')->where("status= 0 ")->row();
         if(empty($urlArr)){
-            echo '任务结束...';
+            //echo '任务结束...';
         }else{
             $json = json_encode(array('a_href'=>$urlArr['a_href']));
             $task_data = array(
